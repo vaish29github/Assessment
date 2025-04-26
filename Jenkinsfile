@@ -3,7 +3,10 @@ pipeline {
 
     environment {
         DOCKER_PATH = 'C:\\Program Files\\Docker\\Docker\\resources\\bin'
-        PATH = "${DOCKER_PATH};${PATH}"
+        TERRAFORM_PATH = 'C:\\Users\\user\\OneDrive\\Desktop\\terraform_1.11.3_windows_386'
+        GIT_PATH = 'C:\\Program Files\\Git\\cmd'
+        CMD_PATH = 'C:\\Windows\\System32'
+        PATH="${DOCKER_PATH};${TERRAFORM_PATH};${GIT_PATH};${CMD_PATH}${PATH}"
 
         DOCKERHUB_USERNAME = 'vaishnavibhardwaj'
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials-id291201'   // Jenkins credentials ID
