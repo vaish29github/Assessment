@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: ''
+                git branch: 'main', url: 'https://github.com/vaish29github/Assessment.git'
             }
         }
 
@@ -41,10 +41,10 @@ pipeline {
 
     post {
         success {
-            echo 'Docker image built and pushed to Docker Hub successfully!'
+            echo 'Successfull!'
         }
         failure {
-            echo 'Build or push failed.'
+            echo 'Failed.'
         }
     }
 }
